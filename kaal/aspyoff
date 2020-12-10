@@ -1,0 +1,7 @@
+sleep 1
+echo "Closing ... AndroSpy"
+cd $HOME
+sudo pm2 stop index
+cd $HOME
+sleep 1
+echo "AndroSpy Closed ..."

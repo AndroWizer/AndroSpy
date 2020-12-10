@@ -1,0 +1,7 @@
+sleep 1
+echo "Starting ... AndroSpy"
+cd $HOME/AndroSpy
+sudo pm2 start index.js
+cd $HOME
+sleep 1
+echo "AndroSpy Started ..."

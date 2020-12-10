@@ -1,0 +1,7 @@
+sleep 1
+echo "All Commands For AndroSpy :"
+echo ""
+echo "01) Start AndroSpy - aspyon"
+echo "02) Stop AndroSpy - aspyoff"
+echo "03) AndroSpy Login ID - aspyid"
+echo "04) Uninstall AndroSpy - aspydel"

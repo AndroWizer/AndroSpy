@@ -1,0 +1,21 @@
+sleep 1
+echo "Uninstalling ... AndroSpy"
+cd $HOME
+sudo rm -rf $HOME/AndroSpy
+sudo rm -rf $HOME/aspy
+sudo rm -rf $HOME/aspyid
+sudo rm -rf $PREFIX/bin/aspyon
+sudo rm -rf $PREFIX/bin/aspyoff
+sudo rm -rf $PREFIX/bin/aspyapp
+sudo rm -rf $PREFIX/bin/aspyhelp
+cd $HOME
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspyins
+sudo cp -r $HOME/aspyins $PREFIX/bin
+sudo chmod +x $PREFIX/bin/aspyins
+sudo rm -rf $HOME/aspyins
+sleep 1
+echo "AndroSpy Uninstalled Sucessfully."
+sleep 1
+echo "If You Want to install Again Then Just Run This Command - aspyins"
+cd $HOME
+sudo rm -rf $PREFIX/bin/aspydel

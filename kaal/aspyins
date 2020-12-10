@@ -1,0 +1,49 @@
+cd $HOME
+sudo rm -rf $HOME/AndroSpy
+sudo rm -rf $PREFIX/bin/aspy
+sudo rm -rf $PREFIX/bin/aspyid
+sudo rm -rf $PREFIX/bin/aspyon
+sudo rm -rf $PREFIX/bin/aspyoff
+sudo rm -rf $PREFIX/bin/aspyins
+sudo rm -rf $PREFIX/bin/aspydel
+sudo rm -rf $PREFIX/bin/aspyapp
+sudo rm -rf $PREFIX/bin/aspyhelp
+sudo rm -rf AndroSpy
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspy
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspyid
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspyon
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspyoff
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspydel
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspyapp
+sudo wget https://github.com/AndroWizer/AndroSpy/raw/master/kaal/aspyhelp
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install openjdk-14-jre-headless
+sudo apt install nodejs -y
+sudo apt install npm -y
+sudo apt install git -y
+sudo git clone https://github.com/AndroWizer/AndroSpy.git
+cd $HOME/AndroSpy
+sudo npm install
+sudo npm install pm2 -g
+cd $HOME
+sudo chmod -R 755 $HOME/AndroSpy
+sudo rm -rf $HOME/AndroSpy/kaal
+sudo mv $HOME/aspy $PREFIX/bin
+sudo mv $HOME/aspyid $PREFIX/bin
+sudo mv $HOME/aspyon $PREFIX/bin
+sudo mv $HOME/aspyoff $PREFIX/bin
+sudo mv $HOME/aspydel $PREFIX/bin
+sudo mv $HOME/aspyapp $PREFIX/bin
+sudo mv $HOME/aspyhelp $PREFIX/bin
+sudo chmod +x $PREFIX/bin/aspy
+sudo chmod +x $PREFIX/bin/aspyid
+sudo chmod +x $PREFIX/bin/aspyon
+sudo chmod +x $PREFIX/bin/aspyoff
+sudo chmod +x $PREFIX/bin/aspydel
+sudo chmod +x $PREFIX/bin/aspyapp
+sudo chmod +x $PREFIX/bin/aspyhelp
+sleep 1
+echo "AndroSpy Successfully Installed"
+sleep 1
+echo "For Any Help Type Command - aspyhelp"
